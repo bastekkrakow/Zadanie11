@@ -1,24 +1,37 @@
 public class MyWater {
 
-  static int largeBottle;
-   static int mediuBottle;
-   static int smallBottle;
+    private float largeBottle;
+    private int mediuBottle;
+    private int smallBottle;
 
-    public int getLargeBottle() {
+    static float SMALL_LITRES = 0.5f;
+    static float MEDIUM_LITRES = 1.0f;
+    static float BIG_LITRES = 2.0f;
+
+
+    public float getLargeBottle() {
         return largeBottle;
     }
 
-    public  int getMediuBottle() {
+    public int getMediuBottle() {
         return mediuBottle;
     }
 
-    public  int getSmallBottle() {
+    public int getSmallBottle() {
         return smallBottle;
     }
 
-    void addLarge(int addL){largeBottle += addL ;}
-    void addMedium(int addM){mediuBottle += addM ;}
-    void addSmall(int addS){smallBottle += addS ;}
+    void addLarge(int addL) {
+        largeBottle += addL;
+    }
+
+    void addMedium(int addM) {
+        mediuBottle += addM;
+    }
+
+    void addSmall(int addS) {
+        smallBottle += addS;
+    }
 
 
 }
